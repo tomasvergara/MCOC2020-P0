@@ -1,0 +1,23 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Aug  5 21:34:20 2020
+
+@author: Tomas
+"""
+
+import scipy as sp
+
+n = 3
+
+A = sp.matrix(sp.rand(n,n)) 
+B = sp.matrix(sp.rand(n,n))
+
+print (f"Matriz A: \n{A}")
+print("")
+print (f"Matriz B: \n{B}")
+
+C = A * B
+
+print("")
+print (f"Matriz C: \n{C}")
