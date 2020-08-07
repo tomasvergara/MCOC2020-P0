@@ -32,4 +32,5 @@
 * Direccion IP (ISP): 190.160.0.11
 * Proveedor: VTR Banda Ancha S.A.
 
-
+# Desempeño 
+![grafico](https://user-images.githubusercontent.com/69252038/89684852-39532d80-d8c9-11ea-844e-fc06c412a231.png)
