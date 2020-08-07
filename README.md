@@ -34,4 +34,17 @@
 
 # Desempeño MATMUL
 ![grafico](https://user-images.githubusercontent.com/69252038/89684852-39532d80-d8c9-11ea-844e-fc06c412a231.png)
-
+* ¿Como difiere del gráfico del profesor?:
+	* Nuestros gráficos difieren en el tiempo transcurrido para las matrices mas pequeñas. En el gráfico del profesor se ve que los realiza en menor cantidad de tiempo y sin tanta diferencia entre las corridas, en cambio, en mi gráfico se aprecia que hay corridas que lo hicieron rapidamente, mientras otras que estuvieron cerca del 0.1 s. 
+	* También vemos que en la zona media (matrices de N igual 60 hasta 1000 aproximadamente) del gráfico del profesor, existe mayor diferencia entre las corridas, mientras que en mi gráfico se ve que los resultados no varían significativamente. 
+	* Por ultimo para la zona final (matrices de N igual 2000 hasta 10000) tienen un comportamiento parecido ambos gráficos, a excepción de la ultima matriz, ya que mi pc lo realiza en mayor cantidad de tiempo (cercano a 30 segundos). 
+* ¿A que se pueden deber estas diferencias?:
+	* Puede deberse a que mientras se corría el codigo, se estaban realizando otras actividades al mismo tiempo, lo cual afecta al rendimiento del computador. Esto habla sobre el procesador que contiene cada pc. 
+* El gráfico de uso de memoria es lineal con el tamaño de matriz, pero el de tiempo transcurido no lo es ¿por qué puede ser?:
+	* Los gráficos de uso de memoria son lineales e iguales porque esto no depende del rendimiento de las computadoras, si no de la magnitud de las matrices con las que se van a operar. 
+* ¿Que versión de Python está usando?:
+	* Python 3.8.1
+* ¿Que versión de Numpy esta usando?:
+	* Numpy 1.18.5
+* Durante la ejecución de su código ¿se utiliza más de un procesador? Muestre una imagen de su uso de procesador durante alguna corrida para confirmar:
+	* 
