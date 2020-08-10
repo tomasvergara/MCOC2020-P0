@@ -48,3 +48,5 @@
 	* Numpy 1.18.5
 * Durante la ejecución de su código ¿se utiliza más de un procesador? Muestre una imagen de su uso de procesador durante alguna corrida para confirmar:
 	* 
+## Función mimatmul:
+
