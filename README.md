@@ -54,4 +54,4 @@
 	* Al igual que en la entrega anterior, nuestros graficos varian principalmente en el tiempo transcurrido de las iteraciones realizadas. Se observa que mi gráfico demora mas tiempo en cada iteracion de cada N implementado en el codigo (queda clarisimo con el tiempo transcurrido con N = 500)
 * ¿A que se pueden deber estas diferencias?:
 	* Puede deberse a que mientras se corría el codigo, se estaban realizando otras actividades al mismo tiempo, lo cual afecta al rendimiento del computador. Esto habla sobre el procesador que contiene cada pc. Pero en particular para esta entrega, afecta directamente el codigo creado para realizar las multiplicaciones, ya que al hacer una ruta mas larga o un calculo mas tedioso, realiza las operaciones en mayor tiempo.
-
+* Se hizo hasta el N = 500 ya que para mayores numeros, mi pc no lograba realizarlo en menos de 5 min. Esto quiere decir que hacer el grafico para 10 iteraciones con altos valores de N, implicaba estar esperando 1 hora y media o mas para obtener los resultados.
