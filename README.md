@@ -49,4 +49,9 @@
 * Durante la ejecución de su código ¿se utiliza más de un procesador? Muestre una imagen de su uso de procesador durante alguna corrida para confirmar:
 	* 
 ## Función mimatmul:
+![grafico](https://user-images.githubusercontent.com/69252038/89841383-c18f3800-db40-11ea-9a10-a1a907141162.png)
+* ¿Como difiere del gráfico del ayudante?:
+	* Al igual que en la entrega anterior, nuestros graficos varian principalmente en el tiempo transcurrido de las iteraciones realizadas. Se observa que mi gráfico demora mas tiempo en cada iteracion de cada N implementado en el codigo (queda clarisimo con el tiempo transcurrido con N = 500)
+* ¿A que se pueden deber estas diferencias?:
+	* Puede deberse a que mientras se corría el codigo, se estaban realizando otras actividades al mismo tiempo, lo cual afecta al rendimiento del computador. Esto habla sobre el procesador que contiene cada pc. Pero en particular para esta entrega, afecta directamente el codigo creado para realizar las multiplicaciones, ya que al hacer una ruta mas larga o un calculo mas tedioso, realiza las operaciones en mayor tiempo.
 
