@@ -57,4 +57,22 @@
 * Se hizo hasta el N = 500 ya que para mayores numeros, mi pc no lograba realizarlo en menos de 5 min. Esto quiere decir que hacer el grafico para 10 iteraciones con altos valores de N, implicaba estar esperando 1 hora y media o mas para obtener los resultados.
 
 # Desempeño INV:
+![grafico](https://user-images.githubusercontent.com/69252038/90091409-49697380-dcf4-11ea-8afc-70aa16d4d611.png)
 
+* Grafico de caso SINGLE 
+* Se observan los 3 casos propuestos
+
+![grafico_half](https://user-images.githubusercontent.com/69252038/90091415-50908180-dcf4-11ea-9e98-313f8d1526a6.png)
+
+* Grafico de caso HALF 
+* Se observa solo los casos con Scipy, ya que con Numpy tiraba error (se cree que esto ocurre por la capacidad que tiene la libreria)
+
+![grafico_double](https://user-images.githubusercontent.com/69252038/90091425-54bc9f00-dcf4-11ea-92b3-cb506f800ccc.png)
+
+* Grafico de caso DOUBLE 
+* Se observan los 3 casos propuestos
+
+![grafico_longdouble](https://user-images.githubusercontent.com/69252038/90091428-571ef900-dcf4-11ea-9b08-af893add5322.png)
+
+* Grafico de caso LONGDOUBLE 
+* Se observa solo los casos con Scipy, ya que con Numpy tiraba error (se cree que esto ocurre por la capacidad que tiene la libreria)
