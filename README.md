@@ -32,7 +32,7 @@
 * Direccion IP (ISP): 190.160.0.11
 * Proveedor: VTR Banda Ancha S.A.
 
-# Desempeño MATMUL
+# Desempeño MATMUL:
 ![grafico](https://user-images.githubusercontent.com/69252038/89684852-39532d80-d8c9-11ea-844e-fc06c412a231.png)
 * ¿Como difiere del gráfico del profesor?:
 	* Nuestros gráficos difieren en el tiempo transcurrido para las matrices mas pequeñas. En el gráfico del profesor se ve que los realiza en menor cantidad de tiempo y sin tanta diferencia entre las corridas, en cambio, en mi gráfico se aprecia que hay corridas que lo hicieron rapidamente, mientras otras que estuvieron cerca del 0.1 s. 
@@ -55,3 +55,5 @@
 * ¿A que se pueden deber estas diferencias?:
 	* Puede deberse a que mientras se corría el codigo, se estaban realizando otras actividades al mismo tiempo, lo cual afecta al rendimiento del computador. Esto habla sobre el procesador que contiene cada pc. Pero en particular para esta entrega, afecta directamente el codigo creado para realizar las multiplicaciones, ya que al hacer una ruta mas larga o un calculo mas tedioso, realiza las operaciones en mayor tiempo.
 * Se hizo hasta el N = 500 ya que para mayores numeros, mi pc no lograba realizarlo en menos de 5 min. Esto quiere decir que hacer el grafico para 10 iteraciones con altos valores de N, implicaba estar esperando 1 hora y media o mas para obtener los resultados.
+
+# Desempeño INV:
