@@ -57,3 +57,4 @@
 * Se hizo hasta el N = 500 ya que para mayores numeros, mi pc no lograba realizarlo en menos de 5 min. Esto quiere decir que hacer el grafico para 10 iteraciones con altos valores de N, implicaba estar esperando 1 hora y media o mas para obtener los resultados.
 
 # Desempeño INV:
+![grafico](https://user-images.githubusercontent.com/69252038/90089646-e544b080-dcef-11ea-9756-fc82dc151cc9.png)
