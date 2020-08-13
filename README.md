@@ -76,3 +76,7 @@
 
 * Grafico de caso LONGDOUBLE 
 * Se observa solo los casos con Scipy, ya que con Numpy tiraba error (se cree que esto ocurre por la capacidad que tiene la libreria)
+
+* Numpy (color rojo), ScipyTrue (color azul) y ScipyFalse (color verde).
+* Se puede observar que hay diferencias en los tiempos transcurridos entre graficos. Esto de puede deber a que los tipo de dato utilizado, afecta directamente a la memoria ocupada para realizar las operaciones, por lo tanto, a menor memoria utilizada, menor tiempo transcurrido en los procesos.  Con "np.half" y "np.longdouble" la libreria Numpy no los aceptaba y tiraba error. A pesar de eso, se entregó los resultados de la libreria Scipy.
+* Es dificil ver en que momento hay cambios en caché del procesador, excepto en el gráfico del tipo DOUBLE en el que ocurrió un fenomeno en que variaba de manera extraña el tiempo transcurrido en las distintos N de matrices. Esto ocurrio en la linea de ScipyTrue (color azul). 
