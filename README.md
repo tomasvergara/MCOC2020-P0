@@ -106,4 +106,5 @@
 ## Matriz inversa 
 * Grafico de MATRIZ LLENA
 ![grafico_entrega_7_inversa_llena](https://user-images.githubusercontent.com/69252038/90948090-12d4dc80-e409-11ea-8d1b-c034fb5bf0e8.png)
-
+* a) 
+* b) 1. Caso matriz llena: vemos que el tiempo de ensamblado se acerca asintoticamente a la linea verde, lo que quiere decir que a medida que va aumentando N, el tiempo de ensamblado va creciendo la relacion de N al cuadrado. Y el tiempo de solucion se acerca asintoticamente a la linea roja, lo que quiere decir que a medida que aumenta N, el tiempo de solucion crece en la relacion de N al cubo. Ademas, en comparacion con la multipliacion de matrices, este es un proceso mucho mas rapido. 
