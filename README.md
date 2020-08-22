@@ -88,3 +88,22 @@
 * Si bien, antes del N = 500 hay un comportamiento muy distinto al grafico que hay en Canvas, ya cuando se empiezan a desarrollar matrices de mayor dimension (N=5000,10000) se nota el mismo orden de los algoritmos utilizados. Se ve claramente que el solver que mas se demora en procesar el codigo es "A_invB_inv" el cual invertia la matriz A para despues multiplicarlo por el vector B de "puros 1". Esto se puede deber a que al hacerlo con matrices de mayor tamaño, esa multiplicacion se vuelve un poco mas tediosa para el programa, haciendo que demore un poco mas en lograr el objetivo. 
 * Entre las librerias Scipy (color VERDE en grafico) y Numpy (color NARANJO en grafico) existen grandes diferencias en rendimiento para matrices pequeñas, pero cuando comienza a subir el numero N, se cruzan hasta llegar al final donde obtienen un rendimiento en tiempo bastante parecido. 
 * Si nos olvidamos de "A_invB_inv" (color AZUL) y "A_invB_npSolve" (color NARANJO) y nos concentramos solo en la libreria Scipy, podemos observar de que hay pequeñas diferencias el inicio del grafico, pero que al subir el valor de N, se ve que proyectan un rendimiento similar para matrices grandes, siendo las mas efectiva en su desarrollo la version de Scipy con matriz definida positiva con Overwrite de datos. Se cree que esto ocurre porque al definir ciertos parametros en el codigo (uno de ellos es el "overwrite" o "symmetric o positive") colaboran a que el procesador tenga una instruccion directa, evitando que se hagan procesos innecesarios para la realizacion del codigo.
+# Desempeño MATRICES LLENAS Y DISPERSAS
+## Multiplicacion de matrices
+* Grafico de MATRIZ LLENA
+![grafico_entrega_7_multiplicacion_llena](https://user-images.githubusercontent.com/69252038/90947419-cdfa7700-e403-11ea-84fa-2b4fc5c216af.png)
+
+* Grafico de MATRIZ DISPERSA
+![grafico_entrega_7_multiplicacion_dispersa](https://user-images.githubusercontent.com/69252038/90947435-e5d1fb00-e403-11ea-99fd-40c768ace560.png)
+
+* a) Si comparamos ambos gráficos podemos notar que hay una notoria diferencia en los tiempos transcurridos. La matriz dispersa, al descartar los espacios con "0", le da mas facilidad al codigo para realizar la multiplicacion entre A y B, esto se refleja en la disminucion en los tiempos. En el grafico de MATRIZ DISPERSA de tiempo de solucion, podemos notar que el gráfico se ve un poco extraño, distinto a los que hemos visto durante el semestre y esto se debe a un posible error de codigo que no plasma bien lo desarrollado. 
+* b) Complejidad asintotica: 
+* 1. Caso matriz llena: vemos que el tiempo de ensamblado se acerca asintoticamente de manera lineal a la linea verde, lo que quiere decir que a medida que va aumentando N, el tiempo de ensamblado va creciendo la relacion de N al cuadrado. Y el tiempo de solucion se acerca asintoticamente a la linea roja, lo que quiere decir que a medida que aumenta N, el tiempo de solucion crece en la relacion de N al cubo. 
+* 2. Caso matriz dispersa: vemos que el tiempo de ensamblado se acerca asintoticamente a la linea verde, lo que quiere decir que a medida que va aumentando N, el tiempo de ensamblado va creciendo la relacion de N al cuadrado. A pesar de que se cree que el grafico de tiempo de solucion no esta correcto, se puede mencionar que igualmente se esperaba una disminucion del tiempo, por lo explicado anteriormente. Ademas, se puede ver que se acerca asintoticamente a la linea amarilla, lo que nos dice que su crecimiento es de N a la 1 (potencia) a medida que crece N.
+* c) Como se ha visto en el curso, el tamaño de las matrices siempre afectara al tiempo de solucion y de ensamblado, hay casos en que las primeras matrices se resuelven en mayor tiempo, pero a medida que va creciendo N (hasta el infinito) se equilibra manteniendo un comportamiento constante en el tiempo. Es decir, que en un principio puede variar mucho, pero despues con matrices de mayores dimensiones, este se comporta sin tanta variacion. 
+* d) Las corridas mantienen un comportamiento constante en general, pero siempre hay corridas que se escapan del promedio, estas pueden ser por las distintas acciones que este realizando el computador en ese momento, ralentizando en algunos casos el desarrollo del codigo. 
+
+## Matriz inversa 
+* Grafico de MATRIZ LLENA
+![grafico_entrega_7_inversa_llena](https://user-images.githubusercontent.com/69252038/90948090-12d4dc80-e409-11ea-8d1b-c034fb5bf0e8.png)
+
